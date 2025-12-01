@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Castañeda Medina Rafael Abraham</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                light: '#f472b6', // pink-400
+                DEFAULT: '#ec4899', // pink-500
+                dark: '#db2777', // pink-600
+              },
+              secondary: {
+                light: '#a5b4fc', // indigo-300
+                DEFAULT: '#818cf8', // indigo-400
+                dark: '#6366f1', // indigo-500
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 dark:bg-slate-900 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>

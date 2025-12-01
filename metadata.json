@@ -1,0 +1,5 @@
+{
+  "name": "Goyibollita",
+  "description": "A web app for a custom plushie and figurine store called 'goyibollita'. It features login/register pages, a home page with product highlights, a full product catalogue, and an FAQ page, all with a sleek dark/light theme toggle.",
+  "requestFramePermissions": []
+}
