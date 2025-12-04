@@ -63,7 +63,14 @@ const Chatbot: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      // Check if API key is defined
+      const apiKey = process.env.API_KEY;
+      if (!apiKey) {
+        console.error("API_KEY is missing. Please ensure you have added 'API_KEY' to your Vercel Environment Variables.");
+        throw new Error("API Key missing");
+      }
+
+      const ai = new GoogleGenAI({ apiKey: apiKey });
       
       const chatHistory = messages.map(m => ({
         role: m.role,
