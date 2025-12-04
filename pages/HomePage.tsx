@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../components/ProductCard';
 import Header from '../components/Header';
+import Chatbot from '../components/Chatbot';
 import { Product } from '../types';
 
 const mainProducts: Product[] = [
@@ -41,6 +42,7 @@ const HomePage: React.FC = () => {
           </div>
         </section>
       </main>
+      <Chatbot />
     </div>
   );
 };

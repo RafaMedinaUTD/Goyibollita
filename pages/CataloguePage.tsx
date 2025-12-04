@@ -2,6 +2,7 @@ import React from 'react';
 import ProductCard from '../components/ProductCard';
 import { Product } from '../types';
 import Header from '../components/Header';
+import Chatbot from '../components/Chatbot';
 
 const allProducts: Product[] = [
   { id: 1, name: 'Custom Wooly Alpaca', price: '$49.99', imageUrl: 'https://picsum.photos/seed/plush1/400/400' },
@@ -28,6 +29,7 @@ const CataloguePage: React.FC = () => {
           {allProducts.map(product => <ProductCard key={product.id} product={product} />)}
         </div>
       </main>
+      <Chatbot />
     </div>
   );
 };
